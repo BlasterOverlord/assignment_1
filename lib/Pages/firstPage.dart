@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'secondPage.dart';
 
 class ProductDetails extends StatelessWidget {
   const ProductDetails({super.key});
@@ -38,7 +39,10 @@ class ProductDetails extends StatelessWidget {
                 const SizedBox(height: 30),
                 ElevatedButton(
                   onPressed: () {
-                    // buy now
+                    Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => BuyNow()),
+                    );
+
                   },
                   child: const Text('Buy Now'),
                 ),
