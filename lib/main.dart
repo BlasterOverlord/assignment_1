@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Pages/firstPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,23 +17,6 @@ class MyApp extends StatelessWidget{
         )
       ),
       home: const ProductDetails(),
-    );
-  }
-}
-
-class ProductDetails extends StatelessWidget{
-  const ProductDetails({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Product Details'),
-
-      ),
-      body: const Center(
-        child: Text('Nothing as of now...')
-      ),
     );
   }
 }
